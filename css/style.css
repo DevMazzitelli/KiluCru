@@ -28,6 +28,10 @@ position: static;
 #configpng {
 
 }
+#voirlive
+{
+    color: aliceblue;
+}
 #imgbanniere {
     
 }
@@ -68,4 +72,7 @@ color:aliceblue
 #resetsubmit 
 {
 
+}
+#contact {
+    color: aliceblue;
 }
