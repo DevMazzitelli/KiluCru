@@ -20,10 +20,13 @@ header {
 }
 /* Ceci est mon button>img>presentation.html */
 #presentationpng {
-
+position: static;
+}
+#nav1 {
+    position: static;
 }
 #configpng {
-    
+
 }
 #imgbanniere {
     
