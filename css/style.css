@@ -1,0 +1,68 @@
+/*
+Auteur : Mazzitelli Ryan
+Date de publication : 25/01/2023
+Description : 
+Version : V1
+Auteur de la mise à jour :  
+Date de mise à jour : 
+
+Modification apporté :
+- 
+*/
+
+/* Nom de connexion */
+
+#body {
+    background-color: black;
+}
+header {
+    position: relative;
+}
+/* Ceci est mon button>img>presentation.html */
+#presentationpng {
+
+}
+#configpng {
+    
+}
+#imgbanniere {
+    
+}
+#formulaire {
+    position: absolute;
+    right: 0%;
+    background-image: url(/medias/images/banner.jpg); 
+    margin-top: -0.4%;
+    border-radius: 5%;
+    border-style: groove;
+}
+
+nav ul li {
+    list-style-type: none;
+    background-image: url(/medias/images/Qui\ suis\ je.png);
+    display: inline-block;
+    width:  200px;
+    margin: 1px;
+}
+
+#fieldset {
+    border: none;
+}
+
+#tittlelogin {
+    
+}
+
+#nomlogin {
+color:aliceblue
+}
+
+#mdp {
+    color:aliceblue
+}
+
+/* Bouton réinitialiser/envoyer */
+#resetsubmit 
+{
+
+}
