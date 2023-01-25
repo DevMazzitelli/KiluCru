@@ -1,44 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KiluCru">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="medias/profil/logo.png" type="image/png">
     <title>KiluCru</title>
 </head>
 
-<body>
+<body id="body">
     <header>
-        <a href="index.html"><img src="/medias/images/header.png" alt="Bannière Kilumya" width="100%"></a>
-        <hr>
-        <form name="MonFormulaire" action="" method="post" name="monFormulaire">
-            <fieldset>
-                <legend>Inscription</legend>
+        <a href="index.html"><img src="/medias/images/header.png" alt="Bannière Kilumya" width="100%" id="imgbanniere"></a>
+        <form name="MonFormulaire" action="" method="post" id="formulaire">
+            <fieldset id="fieldset">
+                <div id="tittlelogin">
+                    <legend> Connexion </legend>
+                </div>
                 <p>
+                <div id="nomlogin">
                     <label for="nom">Votre nom :</label>
+                </div>
+                <div>
                     <input type="texte" name="nom" id="nom" placeholder="Nom d'utilisateur" size="30" maxlength="10"
                         autofocus="autofocus">
+                </div>
                 </p>
                 <p>
+                <div id="mdp">
                     <label for="motdepasse">Mot de passe :</label>
+                </div>
+                <div>
                     <input type="password" name="motdepasse" id="motdepasse" placeholder="Mot de passe" size="30"
                         maxlength="15">
+                </div>
                 </p>
                 <!-- Bouton reset + envoyé -->
-                <input type="reset" name="Réinitialiser">
-                <input type="submit" name="Envoyer">
+                <div id="resetsubmit">
+                    <input type="reset" name="Réinitialiser">
+                    <input type="submit" name="Envoyer">
+                </div>
+            </fieldset>
         </form>
-        </fieldset>
     </header>
-    <hr>
-    <nav>
+    <nav id="nav1">
         <ul>
-            <li><a href="presentation.html">Qui suis-je ?</a></li>
-            <li><a href="config.html">Ma configuration PC</a></li>
+            <div id="presentationpng">
+            <li><a href="presentation.html"><img src="medias/images/Qui_suis_je.png"></li>
+            </div>
+            <div id="configpng">
+            <li><a href="config.html"><img src="medias/images/Config_PC.png"></li>
+            </div>
         </ul>
     </nav>
+    <hr>
     <hr>
     <main>
         <section>
@@ -46,6 +63,13 @@
     - Mettre sur mon site, ma fenêtre twitch pour quand les gens vont sur l'index ils tombent directement sur le live
     - Mettre le tchat sur le côtés en direct
 -->
+            <h2>Ce que vous pourrez voir sur mon live !</h2>
+            <video id="videokraber" src="medias/videos/gameplaykraber.mp4" controls="controls" width="50%" autoplay>
+                <source src="medias/videos/gameplaykraber.mov" />
+                <source src="medias/videos/gameplaykraber.webm" />
+                <source src="medias/videos/gameplaykraber.mp4" />
+                Votre navigateur ne supporte pas la balise vidéos
+            </video>
         </section>
         <article>
 
