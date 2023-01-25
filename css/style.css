@@ -15,64 +15,85 @@ Modification apporté :
 #body {
     background-color: black;
 }
+
 header {
     position: relative;
 }
-/* Ceci est mon button>img>presentation.html */
-#presentationpng {
-position: static;
-}
-#nav1 {
-    position: static;
-}
-#configpng {
 
-}
-#voirlive
-{
-    color: aliceblue;
-}
-#imgbanniere {
+/* Ceci est mon button>img>presentation.html */
+
+#nav1 {
     
 }
+
+#presentationpng {
+    float: left;
+}
+
+#configpng {}
+
+#voirlive {
+    color: aliceblue;
+}
+
+#imgbanniere {}
+
 #formulaire {
     position: absolute;
     right: 0%;
-    background-image: url(/medias/images/banner.jpg); 
+    background-image: url(/medias/images/banner.jpg);
     margin-top: -0.4%;
     border-radius: 5%;
     border-style: groove;
-}
-
-nav ul li {
-    list-style-type: none;
-    background-image: url(/medias/images/Qui\ suis\ je.png);
-    display: inline-block;
-    width:  200px;
-    margin: 1px;
 }
 
 #fieldset {
     border: none;
 }
 
-#tittlelogin {
-    
-}
+#tittlelogin {}
 
 #nomlogin {
-color:aliceblue
+    color: aliceblue
 }
 
 #mdp {
-    color:aliceblue
+    color: aliceblue
 }
 
 /* Bouton réinitialiser/envoyer */
-#resetsubmit 
-{
+#resetsubmit {
 
 }
+
+/* div1 = ensemble de #logo-TWITCH-INTAGRAM-DISCORD */
+/*  margin-top:
+    margin-left:
+*/
+#div1 {
+    display:inline-block;
+    display: grid;
+
+}
+#logotwitch {
+    margin-top:-55px;
+    margin-left: 450px;
+}
+
+#logoinstagram {
+    margin-top:-55px;
+    margin-left: 500px;
+}
+
+#logodiscord {
+    margin-top:-55px;
+    margin-left: 550px;
+}
+
+footer
+{
+}
+
 #contact {
     color: aliceblue;
 }
