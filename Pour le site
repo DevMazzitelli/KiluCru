@@ -1,0 +1,39 @@
+<body>
+    <header>
+        <h1>Balise Multimedia</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Balises Audio</h2>
+                <audio src="medias/audios/JohnDunbarTheme.mp3" controls="controls">
+                    Votre navigateur ne supporte pas la balise audio
+                </audio>
+                <audio controls>
+                    <source src="medias/audios/JohnDunbarTheme.wav"/>
+                    <source src="medias/audios/JohnDunbarTheme.ogg"/>
+                    <source src="medias/audios/JohnDunbarTheme.mp3"/>
+                    Votre navigateur ne supporte pas la balise audio
+                </audio>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Balise vidéos</h2>
+                <hr>
+                <video src="medias/videos/DWWM.mp4" controls="controls" width="30%">
+                Votre navigateur ne supporte pas la balise audio
+                </video>
+                <video controls="controls" width="700">
+                    <source src="medias/videos/DWWM.mov"/>
+                    <source src="medias/videos/DWWM.webm"/>
+                    <source src="medias/videos/DWWM.mp4"/>
+                Votre navigateur ne supporte pas la balise vidéos
+                </video>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
