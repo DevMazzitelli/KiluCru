@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'purple_smileregular';
+    src: url('../font/purple_smile-webfont.woff') format('woff2'),
+         url('../font/purple_smile-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
