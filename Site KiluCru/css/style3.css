@@ -1,0 +1,60 @@
+body {
+    background-color:
+    margin: 0;
+}
+
+
+main {
+    background-image: url(/medias/images/banner.jpg);
+}
+#banner {
+    width: 100%;
+}
+
+.nom {
+    color: white ;
+    display: grid;
+}
+
+.prenom {
+    color: white ;
+    display: grid;
+}
+
+.mail {
+    color: white ;
+    display: grid;
+}
+
+#qmessage {
+    color: white ;
+    display: grid;
+}
+
+#message {
+    width: 99.2%;
+    height: 250px;
+    
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#reset {
+    height: 50px;
+}
+
+#submit {
+    margin-left: 50px;
+    height: 50px;
+    width: 80px;
+    align-content: center;
+}
+
+#return {
+    margin-top: 50px;
+    text-align: center;
+}
+
