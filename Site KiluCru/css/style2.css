@@ -16,42 +16,26 @@ Date de mise à jour :
     font-weight: normal;
     font-style: normal;
 }
-/* Screen pour max 425px */
-@media screen and (max-width: 425px) {
+/* Screen pour max 768px */
 
-    /* Mon header */
-    .quisuisje {
-        margin-left: -350px;
-    }
-    #photodemoi {
-        height: 250px;
-        margin-top: -120px
+@media screen and (max-width: 768px) {
+    #quisuisje {
+        margin-left: 350px !important;
+        margin-top: 50px;
     }
     #texte {
-        font-size: 20px !important;
+        margin-right: 60px;
     }
-    #mesjeux {
-        flex-direction: column;
-    }
-    h2 {
-        margin-left: 60px;
-    }
-    #logoapex {
-
-    }
-    #logoflyff {
-        margin-top: 25px;
-        margin-left: 40px;
-    }
-    #logolol {
-        margin-top: 25px;
+    #photodemoi {
+        width: 30% !important;
+        margin-top: -40px !important;
     }
 }
 
 body {
     margin: 0;
-    background-image: url(/medias/images/back.png);
-    background-repeat: no-repeat;
+    background-image: url(/medias/images/backreturn.png);
+    background-size: cover;
 }
 
 #imgbanner {
@@ -61,12 +45,13 @@ body {
 /* Ma présentation */
 #quisuisje {
     width: 30%;
-    margin-left: 500px;
+    margin-left: 800px;
     margin-top: 50px;
 }
 
 #photodemoi {
-    width: 30%;
+    width: 50%;
+    margin-top: -200px;
 }
 
 .descrip {
@@ -77,7 +62,7 @@ body {
 
 #texte {
     font-family: punyregular ;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -91,7 +76,8 @@ h2 {
 
 #mesjeux {
     display: flex;
-    margin-left: 110px;
+    margin-left: 800px;
+    margin-top: -200px;
 }
 
 #logoapex {

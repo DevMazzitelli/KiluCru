@@ -17,41 +17,35 @@ Date de mise à jour :
     font-style: normal;
 }
 
-@media screen and (max-width: 425px) {
-    /* Ma nav */
-    nav {
-        margin-left: 20px;
+/* Screen pour max 768px */
+
+@media screen and (max-width: 768px) {
+    /* ma nav */
+    /* Image de mec nav */
+    .imgnav {
+        width: 200px !important;
+        margin-left: -70px !important;
     }
-    ul {
-        flex-direction: column;
-    }
+    /* Separation de mes <li> */
     li {
-        margin-top: 20px;
+        margin-left: 50px;
+        margin-top: 7px;
     }
-    /* Mon main */
+
+    /* main */
     .presentation {
-        margin-left: -230px;
+        margin-left: -380px;
     }
-    h1 {
-        font-size: 20px;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .video {
-        width: 70vh;
-        margin-left: -100px;
-    }
-    /* Mon footer */
     .mecontacter {
-        margin-left: -240px;
+        margin-left: -400px;
+        margin-top: -20px;
     }
 }
 
-
 body {
     margin: 0;
-    background-image: url(/medias/images/back.png);
-    background-repeat: no-repeat;
+    background-image: url(/medias/images/backreturn.png);
+    background-size: cover;
 }
 
 #imgbanner {
@@ -64,23 +58,23 @@ ul {
 }
 
 .imgnav {
-    width: 200px;
-    margin-left: 40px;
-    margin-top: -30px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: -38px;
 }
-.test {
+/* .test {
     display: flex;
     text-align: center;
-}
-
+} */
+/* Mon main */
 #presentation {
     width: 50%;
-    margin-left: 280px;
+    margin-left: 480px;
 }
 
 #mecontacter {
     width: 50%;
-    margin-left: 280px;
+    margin-left: 500px;
 }
 
 h1 {
