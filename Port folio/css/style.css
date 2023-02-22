@@ -302,7 +302,6 @@ main {
 
 #buttoncv {
     background-color: #2B3467;
-    margin-top: 5vh;
     padding: 1px 20px;
     font-size: 100%;
     border-radius: 5px;
@@ -310,7 +309,7 @@ main {
     border: none;
     text-align: center;
     margin-left: 12vh;
-    margin-top: -15vh;
+    margin-top: 2vh;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
@@ -402,6 +401,7 @@ main {
 /* Mon footer */
 footer {
     background-color: #247b4d;
+    box-shadow: 1px -4px 15px 1px rgba(0,0,0,0.5);
     background-image: linear-gradient(90deg, #247b4d 0%, #000000 46%, #247b4d 100%);
 }
 
@@ -450,6 +450,7 @@ form {
     text-align: center;
     border: 3px solid rgba(136, 124, 124, 0.473);
     border-radius: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 #messagetext {
