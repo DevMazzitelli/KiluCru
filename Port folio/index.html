@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="medias/profil/photodemoi.png" type="image/png">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="style.js">
     <title>Portfolio de Mazzitelli Ryan | Développeur web / web mobile</title>
 </head>
 
 <body>
     <header>
-        <img id="picturesryan" src="/medias/profil/photodemoi.png" alt="Photo de Ryan Mazzitelli" title="Ryan Mazzitelli">
-        <nav>
-            <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Mon logo -->
+        <div id="barredenavigation">
+            <img id="picturesryan" src="/medias/images/Concept-01.jpg" alt="Photo de Ryan Mazzitelli" title="Ryan Mazzitelli">
+            <nav>
+                <ul>
+                <li><a href="#picturesryan">Accueil</a></li>
+                <li><a href="#propos">Profil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contactezmoi">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="rdq">
             <h1>Ryan Mazzitelli</h1>
             <h2>Développeur Web - Web mobile</h2>
@@ -33,21 +35,22 @@
             <h2 id="propos">A PROPOS DE MOI</h2>
             <div class="aproposdemoi">
                     <img id="photodeface" src="/medias/profil/face.jpg" alt="">
-                    <div id="textpropos">
-                        <p id="textpropos1">Salut ! Je m'appelle Ryan Mazzitelli, développeur web - web mobile.
-                        Auparavant, j'ai pendant 5 ans été militaire dans le matériel ce qui m'a permis d'acquérir de 
-                        très bonne compétences en terme d'organisation, de travail d'équipe et d'apprentissage. 
+                    <div class="textpropos">
+                        <p>
+                            Salut ! Je m'appelle Ryan Mazzitelli, développeur web - web mobile.
+                            Auparavant, j'ai pendant 5 ans été militaire dans le matériel ce qui m'a permis d'acquérir de 
+                            très bonne compétences en terme d'organisation, de travail d'équipe et d'apprentissage. 
                         </p>
-                        <p id="textpropos2">
-                        J'ai profité de la reconversion proposé par l'armée pour me effectuer une reconversion dans le développement, domaine qui m'intéressait depuis de nombreuses années.
+                        <p>
+                            J'ai profité de la reconversion proposé par l'armée pour me effectuer une reconversion dans le développement, domaine qui m'intéressait depuis de nombreuses années.
                         </p>
-                        <p id="textpropos3">
+                        <p>
                             J'ai donc suivi la formation de développeur web - web mobile au sein de l'AFPA de Fontenay-le-comte.
                         </p>
-                        <p id="textpropos4">
+                        <p>
                             Je continue à travailler chaque jour avec envie, motivation et des idées plein la tête.
                         </p>
-                        <p id="textpropos5">
+                        <p>
                             Je suis actuellement à la recherche d'un stage dans ce domaine. 
                         </p>
                     </div>
@@ -114,30 +117,78 @@
             <p id="texteportfolio">Vous retrouvez ci dessous les projets que j'ai réalisé durant ma formation de développeur web - web mobile :</p>
         </div>
         <div class="mescards">
-            <a href="https://google.com" class="card">
+            <a href="#" class="card">
                 <div class="inner">
                 <h2 class="title">Mon portfolio</h2>
                 <time class="subtitle">créer le 21 février 2023<time>
                 </div>
             </a>
-            <a href="https://google.com" class="card">
+            <a href="#" class="card">
                 <div class="inner">
                 <h2 class="title">Mon portfolio</h2>
                 <time class="subtitle">créer le 21 février 2023<time>
                 </div>
             </a>
-            <a href="https://google.com" class="card">
+            <a href="#" class="card">
                 <div class="inner">
                 <h2 class="title">Mon portfolio</h2>
                 <time class="subtitle">créer le 21 février 2023<time>
                 </div>
             </a>
         </div>
-    
     </main>
 
     <footer>
-
+        <br>
+        <div class="contactezH">
+            <h2 id="contactezmoi"><u>CONTACTEZ-MOI </u></h2>
+            <h3 id="hesitezpas">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h3>
+        </div>
+        <form>
+            <div id="nomtext">
+            <label for="nom">Nom* :</label>
+            <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+            <label for="prenom">Prénom* :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div>
+            <label for="email">Email* :</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone">
+            </div>
+            <div>
+            <label for="objet">Objet* :</label>
+            <input type="text" id="objet" name="objet" required>
+            </div>
+            <div>
+            <label for="message" id="messagetext">Message* :</label>
+            <textarea id="message" name="message" required></textarea>
+            <h4 id="champ">* Champ obligatoire</h4>
+            </div>
+            <div class="check">
+                <input class="form-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-label" for="flexSwitchCheckChecked">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations.</label>
+            </div>
+            <div class="button">
+            <button type="reset">Réinitialiser</button>
+            <button type="submit">Envoyer</button>
+            </div>
+        </form>
+        <div id="findepage">
+            <h3 id="copy">© Copyright 2022 - Ryan Mazzitelli. Tous droits réservés.</h3>
+            <div class="condition">
+                <a href="">Plan du site</a>
+                <p class="barre">|</p>
+                <a href="">Mentions légales</a>
+                <p class="barre">|</p>
+                <a href="">Politique de confidentialité</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
