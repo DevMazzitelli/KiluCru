@@ -112,6 +112,7 @@ main {
     color: #2B3467;
     font-size: 170%;
     margin-top: 55vh;
+    padding-top: 2vh;
     scroll-behavior: smooth;
     margin-bottom: 5vh;
 }
@@ -303,7 +304,7 @@ main {
 #buttoncv {
     background-color: #2B3467;
     padding: 1px 20px;
-    font-size: 100%;
+    font-size: 110%;
     border-radius: 5px;
     color: #fff;
     border: none;
@@ -535,4 +536,8 @@ button:hover {
 
 .barre {
     margin-top: 1vh;
+}
+
+#nom1 {
+    margin-top: 2vh;
 }
