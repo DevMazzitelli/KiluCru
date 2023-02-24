@@ -17,6 +17,30 @@ body {
     background-size: 200%;
 }
 /* Mon header */
+@media screen and (max-width: 1440px) {
+    #picturesryan {
+        margin-left: 15vh !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #picturesryan {
+        margin-left: 15vh !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    #picturesryan {
+        display: none;
+    }
+    nav ul li {
+        
+    }
+    .delete768 {
+        display: none;
+    }
+
+}
+
 header {
     background-repeat: no-repeat;
 }
@@ -52,12 +76,24 @@ li {
 }
 
 a {
-    display: block;
+    color: #fff;
     padding: 10px;
-    color: white;
     text-decoration: none;
     font-size: 100%;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+a:hover {
+    color: rgb(74, 74, 223);
+}
+
+/* 
+Ryan Mazzitelli
+Développeur Web - Web mobile */
+@media screen and (max-width: 768px) {
+
+/* FAIRE MA REPONSIVE DESIGN */
+
 }
 
 h1 {
@@ -86,15 +122,15 @@ h2 {
     border: none;
 }
 
-.rdq {
-    text-align: center;
-}
-
-
 #buttonquisuisje:hover {
     cursor: pointer;
     background-color: black;
     transition: 1s;
+}
+
+/* Class de h1/h2/#boutonquisuisje+hover */
+.rdq {
+    text-align: center;
 }
 
 /* Main de ma page */
@@ -116,15 +152,38 @@ main {
     scroll-behavior: smooth;
     margin-bottom: 5vh;
 }
-@media screen and (min-width: 1440px) {
-    #propos {
-    margin-top: 5vh;
-    }
-    
-}
 
 
 /* Ma présentation */
+@media screen and (max-width: 1440px) {
+    .proposdemoi {
+        margin-top: -33vh !important;
+    }
+    #photodeface {
+        margin-left: 20vh !important;
+        margin-right: -20vh !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .proposdemoi {
+        margin-top: -50vh !important;
+    }
+    #photodeface {
+        margin-left: 2vh !important;
+    }
+    .recherche {
+        margin-top: -30vh !important;
+        margin-bottom: -8vh !important;
+    }
+}
+
+
+.aproposdemoi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
 #photodeface {
     width: 30vh;
     height: 40vh;
@@ -133,10 +192,6 @@ main {
     margin-top: -3vh;
     border-radius: 5px;
 }
-@media screen and (min-width: 1440px) {
-    
-}
-
 
 /* Mon textes de présentation */
 .textpropos {
@@ -148,32 +203,67 @@ main {
     line-height: 25px;
     margin-top: 3vh;
 }
-@media screen and (min-width: 1440px) {
-    #textpropos {
-        
-    }
-}
 
-.aproposdemoi {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5vh;
-}
-
-#imgetoile {
+#imgserveur {
     width: 100%;
     height: 60vh;
 }
 
-#recherche {
+.recherche {
     color: white;
     font-size: 3rem;
     margin-top: -32vh;
     text-align: center;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
-#actuellement {
-    color: white;
+
+/* Mes compétences */
+@media screen and (max-width: 1440px) {
+    #mescompetences {
+        margin-left: 10vh !important;
+    }
+    .titre {
+        margin-left: 10vh;
+    }
+    #html {
+        margin-left: -24vh !important;
+    }
+    #java , #php, #sql, #ajax {
+        margin-left: -4.5vh !important;
+    }
+    #bp, #symfony, #angu, #windows {
+        margin-left: -2.5vh !important;
+    }
+    #jq {
+        margin-left: -35vh !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #textcompetences {
+        width: 50vh !important;
+        margin-left: 22vh !important;
+        margin-bottom: 2vh;
+    }
+    #mescompetences {
+        margin-left: 23vh !important;
+    }
+    .titre {
+        margin-left: 0vh !important;
+        margin-right: -20vh !important;
+    }
+    .progress {
+        margin-left: -2vh;
+    }
+    #html {
+        margin-left: -16vh !important;
+    }
+    #angu {
+        margin-left: -3.5vh !important;
+    }
+    #jq {
+        margin-left: -28vh !important;
+    }
 }
 
 #competences {
@@ -194,31 +284,28 @@ main {
     margin-top: 1vh;
 }
 
-.progress {
-    width: 570px;
-    height: 10px;
-    border-radius: 50px;
-    background-color: rgb(107, 103, 103);
-}
-
-.progress::-webkit-progress-value {
-    background-color: #3E54AC;
-}
-
-.progress::-moz-progress-bar {
-    background-color: #3E54AC;
-}
-
+/* Ma progression */
 #mescompetences {
     margin-left: 20vh;
     width: 30%;
     text-align: center;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
 }
 
-.front {
-    font-size: 15px;
-    text-align: center;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+/* Mes barre de progression */
+.progress {
+    width: 570px;
+    height: 10px;
+    background-color: rgb(107, 103, 103);
+}
+
+.progress::-webkit-progress-value {
+    background-color: #101d4e;
+}
+
+.progress::-moz-progress-bar {
+    background-color: #32489e;
 }
 
 .code {
@@ -226,72 +313,105 @@ main {
     display: flex;
     flex-direction: column;
 }
-.codage {
-    margin-left: -49vh;
-    font-size: 1.3vh;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+/* Mes titres : FRONT/BACK/FRAMEWORK/DIVERS */
+
+.titre {
+    color: #1f3aa5;
+    font-size: 2vh;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    font-size: 2vh;
 }
 
+/* FRONT-END */
 #html {
-    margin-left: -56vh;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left: -41vh;
     font-size: 15px;
+    margin-top: 1vh;
 }
 
-#css {
-    margin-left: -57.5vh;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 15px;
-}
-
-#js {
-    margin-left: -1vh;
-    width: 30%;
-    font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-}
-
+/* BACK END */
 #java {
     margin-left: -7.3vh;
     width: 30%;
     font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 1vh;
 
 }
 #php {
     margin-left: -7.5vh;
     width: 30%;
     font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-
 }
-#wp {
-    margin-left: -4.5vh;
+
+#sql {
+    margin-left: -7.5vh;
     width: 30%;
     font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#ajax {
+    margin-left: -7vh;
+    width: 30%;
+    font-size: 15px;
+}
+
+/* FRAMEWORK */
+#bp {
+    margin-left: -5vh;
+    width: 30%;
+    font-size: 15px;
+    margin-top: 1vh;
+}
+
+#symfony {
+    margin-left: -5vh;
+    width: 30%;
+    font-size: 15px;
 }
 
 #angu {
-    margin-left: -1vh;
+    margin-left: -5.5vh;
     width: 30%;
     font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-
 }
+
+#jq {
+    margin-left: -53vh;
+    font-size: 15px;
+}
+
+/* DIVERS */
 
 #windows {
     margin-left: -5.5vh;
     width: 30%;
     font-size: 15px;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 1vh;
 }
 
+/* Mon cv + telechargement */
+@media screen and (max-width: 1440px) {
+    .cv {
+        margin-right: -20vh !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .cv {
+        margin-top: 60vh;
+        margin-right: -10vh !important;
+    }
+    #buttoncv {
+        margin-left: 10vh !important;
+    }
+}
 #cvryan {
     width: 50%;
     float: right;
     margin-right: 20vh;
-    margin-top: -45vh;
+    margin-top: -57vh;
 }
 
 .cv {
@@ -314,21 +434,47 @@ main {
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-#pc {
+/* image citation */
+@media screen and (max-width: 1440px) {
+    .citation {
+        margin-top: -20vh !important;
+        font-size: 150% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .citation {
+        margin-top: -15vh !important;
+        font-size: 140% !important;
+    }
+}
+#imgbanner {
     width: 100%;
 }
-
-/* Mes citations :  */
 
 .citation {
     color: white;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     margin-top: -28vh;
-}
-
-#citation {
     text-align: center;
     font-size: 3vh;
+}
+
+/* Portfolio */
+@media screen and (max-width: 1440px) {
+    .portfolio {
+        margin-top: -8vh !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .portfolio {
+        margin-top: -14vh !important;
+    }
+    #texteportfolio {
+        margin-top: 1vh !important;
+    }
+    .mescards {
+        margin-right: 2vh;
+    }
 }
 
 .portfolio {
@@ -345,7 +491,13 @@ main {
 #texteportfolio {
     color: black;
     margin-top: 5vh;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.mescards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
 }
 
 .card {
@@ -376,7 +528,6 @@ main {
     padding: 40px;
 }
 
-
 .title {
     font-size: 24px;
     color: black;  
@@ -391,13 +542,7 @@ main {
 .subtitle {
     color: #b0215e;
     text-align: center;
-}
-
-.mescards {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5vh;
-}
+} 
 
 /* Mon footer */
 footer {
@@ -406,27 +551,38 @@ footer {
     background-image: linear-gradient(90deg, #247b4d 0%, #000000 46%, #247b4d 100%);
 }
 
+.contactezH {
+    color: white;
+    text-align: center;
+}
+
 #contactezmoi {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 #hesitezpas {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin-bottom: 2vh;
 }
-.contactezH {
-    color: white;
-    text-align: center;
+/* Mon formulaire */
+@media screen and (max-width: 1440px) {
+    textarea {
+        width: 53% !important;
+    }
+    #champobligatoire {
+        margin-bottom: 1vh;
+    }
 }
-
 form {
-    width: 500px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
-}
-
-div {
-    margin-bottom: 20px;
+    background-color: rgba(136, 124, 124, 0.473);
+    border: 3px solid rgba(136, 124, 124, 0.473);
+    border-radius: 5px;
+    width: 60vh;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 label {
@@ -437,31 +593,19 @@ label {
     color: #fff;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-
 input {
     width: 32vh;
-}
-
-form {
-    background-color: rgba(136, 124, 124, 0.473);
-    width: 60vh;
-    text-align: center;
-    border: 3px solid rgba(136, 124, 124, 0.473);
-    border-radius: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin-bottom: 20px;
 }
 
 #messagetext {
     vertical-align: top;
 }
 
-#champ {
+#champobligatoire {
     color: #fff;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    margin-right: 6vh;
+    margin-right: 5vh;
 }
 
 textarea {
@@ -471,12 +615,10 @@ textarea {
     border-radius: 3px;
     font-size: 16px;
     resize: none;
-}
-
-textarea {
     height: 100px;
 }
 
+/* Acceptation des conditions du formulaire */
 .check {
     display: flex;
     flex-direction: row;
@@ -494,19 +636,17 @@ textarea {
     font-size: 13px;
 }
 
-#aste {
-    color: red;
-}
-
+/* Bouton Réinitialiser-Envoyer */
 button {
     padding: 10px;
     background-color: #2B3467;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
+    margin-bottom: 2vh;
 }
+
 .button {
     text-align: center;
 }
@@ -515,6 +655,7 @@ button:hover {
     background-color: black;
 }
 
+/* Fin de page */
 #findepage {
     background-color: #000000;
     margin-top: 10vh;

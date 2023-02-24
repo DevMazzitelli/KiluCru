@@ -18,11 +18,11 @@
             <img id="picturesryan" src="/medias/images/Concept-01.jpg" alt="Photo de Ryan Mazzitelli" title="Ryan Mazzitelli">
             <nav>
                 <ul>
-                <li><a href="#picturesryan">Accueil</a></li>
-                <li><a href="#propos">Profil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contactezmoi">Contact</a></li>
+                <li class="delete768"><a href="#picturesryan"><b><u>Accueil</u></b></a></li>
+                <li class="delete768"><a href="#propos"><b><u>Profil</u></b></a></li>
+                <li class="delete768"><a href="#competences"><b><u>Compétences</u></b></a></li>
+                <li class="delete768"><a href="#portfolio"><b><u>Portfolio</u></b></a></li>
+                <li class="delete768"><a href="#contactezmoi"><b><u>Contact</u></b></a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
         <div class="proposdemoi">
             <h2 id="propos">A PROPOS DE MOI</h2>
             <div class="aproposdemoi">
-                    <img id="photodeface" src="/medias/profil/face.jpg" alt="">
+                    <img id="photodeface" src="/medias/profil/face.jpg" alt="Homme face selfie" title="Ryan Mazzitelli">
                     <div class="textpropos">
                         <p>
                             Salut ! Je m'appelle Ryan Mazzitelli, développeur web - web mobile.
@@ -44,7 +44,7 @@
                             très bonne compétences en terme d'organisation, de travail d'équipe et d'apprentissage. 
                         </p>
                         <p>
-                            J'ai profité de la reconversion proposé par l'armée pour me effectuer une reconversion dans le développement, domaine qui m'intéressait depuis de nombreuses années.
+                            J'ai profité de la reconversion proposé par l'armée pour effectuer une reconversion dans le développement, domaine qui m'intéressait depuis de nombreuses années.
                         </p>
                         <p>
                             J'ai donc suivi la formation de développeur web - web mobile au sein de l'AFPA de Fontenay-le-comte.
@@ -59,34 +59,24 @@
             </div>
             <br>
             <div id="actuellement">
-                <img id="imgetoile" src="/medias/images/IT_Cabinet.png" alt="">
-                <div id="recherche">
+                <img id="imgserveur" src="/medias/images/IT_Cabinet.png" alt="serveur informatique">
+                <div class="recherche">
                     <h3>Actuellement :</h3>
                     <h3>A la recherche d'un stage dans le développement web</h3>
                 </div>
-                <h3 id="competences"> Mes compétences : </h3>
+                <h3 id="competences">Mes compétences :</h3>
                 <h4 id="textcompetences">Elles sont en constantes améliorations car pour moi ce métier n'a pas de limite d'apprentissage, on ne peut pas maitriser tout à 100% et il y a toujours de nouvelle technique à apprendre.</h4>
             </div>
         </div>
         <div id="mescompetences">
-            <h4 class="front">FRONT END</h4>
+            <h4 class="titre">FRONT END</h4>
             <div class="code">
-                <h4 id="html">HTML</h4>
-                <progress class="progress" value="80" max="100"></progress>
+                <h4 id="html">HTML / CSS / JAVASCRIPT</h4>
+                <div id="barrehtml">
+                    <progress class="progress" value="80" max="100"></progress>
+                </div>
             </div>
-            <div class="code">
-                <h4 id="css">CSS</h4>
-                <progress class="progress" value="70" max="100"></progress>
-            </div>
-            <div class="code">
-                <h4 id="js">JAVASCRIPT / JQUERY</h4>
-                <progress class="progress" value="0" max="100"></progress>
-            </div>
-            <div class="code">
-                <h4 id="wp">WORDPRESS</h4>
-                <progress class="progress" value="0" max="100"></progress>
-            </div>
-                <h4 class="front">BACK END</h4>
+                <h4 class="titre">BACK END</h4>
                 <div class="code">
                     <h4 id="java">JAVA</h4>
                     <progress class="progress" value="20" max="100"></progress>
@@ -96,27 +86,48 @@
                     <progress class="progress" value="0" max="100"></progress>
                 </div>
                 <div class="code">
-                    <h4 id="angu">ANGULAR / API / AJAX</h4>
+                    <h4 id="sql">SQL</h4>
                     <progress class="progress" value="0" max="100"></progress>
                 </div>
-                <h4 class="front">DIVERS</h4>
+                <div class="code">
+                    <h4 id="ajax">AJAX</h4>
+                    <progress class="progress" value="0" max="100"></progress>
+                </div>
+                <h4 class="titre">FRAMEWORK</h4>
+                <div class="code">
+                    <h4 id="bp">BOOSTRAP</h4>
+                    <progress class="progress" value="60" max="100"></progress>
+                </div>
+                <div class="code">
+                    <h4 id="symfony">SYMMFONY</h4>
+                    <progress class="progress" value="0" max="100"></progress>
+                </div>
+                <div class="code">
+                    <h4 id="angu">ANGULAR</h4>
+                    <progress class="progress" value="0" max="100"></progress>
+                </div>
+                <div class="code">
+                    <h4 id="jq">JQUERY</h4>
+                    <progress class="progress" value="0" max="100"></progress>
+                </div>
+                <h4 class="titre">DIVERS</h4>
                 <div class="code">
                     <h4 id="windows">WINDOWS</h4>
                     <progress class="progress" value="90" max="100"></progress>
                 </div>
         </div>
         <div class="cv">
-            <img id="cvryan" src="medias/images/cv_ryan.PNG" alt="">
+            <img id="cvryan" src="medias/images/cv_ryan.PNG" alt="curiculum vitae" title="curiculum vitae de Ryan Mazzitelli">
             <a href="medias/profil/CV.pdf" download><button id="buttoncv">Télécharger mon CV</button></a>
         </div>
-        <img src="medias/images/banniere.webp" id="pc" alt="">
+        <img src="medias/images/banniere.webp" id="imgbanner" alt="vert café plante cahier crayon citation">
         <div class="citation">
-            <p id="citation">"L'apprentissage est la seule chose que l'esprit n'épuise jamais,</p>
-            <p id="citation">ne craint jamais et ne regrette jamais."</p>
+            <p>"L'apprentissage est la seule chose que l'esprit n'épuise jamais,</p>
+            <p>ne craint jamais et ne regrette jamais."</p>
         </div>
         <div class="portfolio">
             <h2 id="portfolio">PORTFOLIO</h2>
-            <p id="texteportfolio">Vous retrouvez ci dessous les projets que j'ai réalisé durant ma formation de développeur web - web mobile :</p>
+            <p id="texteportfolio"><b>Vous retrouvez ci dessous les projets que j'ai réalisé durant ma formation de développeur web - web mobile :</b></p>
         </div>
         <div class="mescards">
             <a href="#" class="card">
@@ -139,7 +150,6 @@
             </a>
         </div>
     </main>
-
     <footer>
         <br>
         <div class="contactezH">
@@ -149,28 +159,28 @@
         <form>
             <div id="nomtext">
             <label id="nom1" for="nom">Nom* :</label>
-            <input type="text" id="nom" name="nom" required>
+            <input type="text" id="nom" placeholder="Nom" name="nom" required>
             </div>
             <div>
             <label for="prenom">Prénom* :</label>
-            <input type="text" id="prenom" name="prenom" required>
+            <input type="text" id="prenom" placeholder="Prénom" name="prenom" required>
             </div>
             <div>
             <label for="email">Email* :</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" placeholder="Adresse mail" name="email" required>
             </div>
             <div>
             <label for="telephone">Téléphone :</label>
-            <input type="tel" id="telephone" name="telephone">
+            <input type="tel" id="telephone" placeholder="Numéro de téléphone" name="telephone">
             </div>
             <div>
             <label for="objet">Objet* :</label>
-            <input type="text" id="objet" name="objet" required>
+            <input type="text" id="objet" placeholder="Objet"  name="objet" required>
             </div>
             <div>
             <label for="message" id="messagetext">Message* :</label>
-            <textarea id="message" name="message" required></textarea>
-            <h4 id="champ">* Champ obligatoire</h4>
+            <textarea id="message" placeholder="Saisir votre message" name="message" required></textarea>
+            <h4 id="champobligatoire">* Champ obligatoire</h4>
             </div>
             <div class="check">
                 <input class="form-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -182,7 +192,7 @@
             </div>
         </form>
         <div id="findepage">
-            <h3 id="copy">© Copyright 2022 - Ryan Mazzitelli. Tous droits réservés.</h3>
+            <h3 id="copy">© Copyright 2023 - Ryan Mazzitelli. Tous droits réservés.</h3>
             <div class="condition">
                 <a href="">Plan du site</a>
                 <p class="barre">|</p>
